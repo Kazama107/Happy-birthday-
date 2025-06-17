@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Miss J</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #ffe4e1, #ffd700, #ff69b4);
+      color: #fff;
+      text-align: center;
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 30px;
+      color: #fff8dc;
+      text-shadow: 2px 2px 8px #ff1493;
+    }
+
+    .img-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .img-section img {
+      width: 180px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+      transition: transform 0.3s;
+    }
+
+    .img-section img:hover {
+      transform: scale(1.1);
+    }
+
+    .wishes {
+      font-size: 1.4em;
+      margin: 20px auto;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+    }
+
+    .wishes p {
+      margin: 10px 0;
+    }
+
+    .emoji {
+      font-size: 1.8em;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #ff1493;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .img-section img {
+        width: 120px;
+      }
+      .wishes {
+        font-size: 1.1em;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday Miss J 🎂</h1>
+
+  <!-- Cake & Glitter Images -->
+  <div class="img-section">
+    <img src="https://i.imgur.com/uN8BcrG.png" alt="Cake">
+    <img src="https://i.imgur.com/I2kY9nZ.gif" alt="Glitter">
+    <img src="https://i.imgur.com/TZbEmuY.png" alt="Cake Slice">
+    <img src="https://i.imgur.com/ELZK2F3.gif" alt="Glitter Heart">
+  </div>
+
+  <!-- Wishes Section -->
+  <div class="wishes">
+    <p>Wishing you endless laughter, delicious cake, and amazing memories! 🎂💖</p>
+    <p>May your smile shine brighter than glitter today ✨</p>
+    <p>You’re fabulous, funny, and full of sparkle — just like this page 😉</p>
+    <p class="emoji">🎈💃🎊💝🎀🧁</p>
+  </div>
+
+  <!-- Download Button -->
+  <a class="download-btn" href="https://i.imgur.com/uN8BcrG.png" download="BirthdayCake.jpg">
+    📥 Download Cake Pic
+  </a>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+</body>
+</html>
